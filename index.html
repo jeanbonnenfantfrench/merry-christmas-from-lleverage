@@ -1,0 +1,1170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover Lleverage's most read articles of 2025 - featuring AI automation, ERP solutions, and business transformation insights with a festive Christmas theme.">
+    <meta name="keywords" content="Lleverage, AI automation, ERP, business automation, Christmas 2025, most read articles">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.lleverage.ai/most-read-2025">
+    <meta property="og:title" content="Our Most Read Articles of 2025 | Lleverage">
+    <meta property="og:description" content="Discover Lleverage's most read articles of 2025 - featuring AI automation, ERP solutions, and business transformation insights.">
+    <meta property="og:image" content="https://www.lleverage.ai/christmas-og-image.jpg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.lleverage.ai/most-read-2025">
+    <meta property="twitter:title" content="Our Most Read Articles of 2025 | Lleverage">
+    <meta property="twitter:description" content="Discover Lleverage's most read articles of 2025 - featuring AI automation, ERP solutions, and business transformation insights.">
+    <meta property="twitter:image" content="https://www.lleverage.ai/christmas-og-image.jpg">
+    
+    <title>Our Most Read Articles of 2025 | Lleverage</title>
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        :root {
+            /* Lleverage Brand Colors */
+            --lleverage-purple-dark: #6B46C1;
+            --lleverage-purple-light: #8B5CF6;
+            --lleverage-purple-gradient-start: #5B21B6;
+            --lleverage-purple-gradient-end: #7C3AED;
+            
+            /* Christmas Colors */
+            --christmas-red: #C41E3A;
+            --christmas-green: #0F5132;
+            --christmas-gold: #FFD700;
+            --christmas-white: #FFFFFF;
+            --christmas-snow: #F8F9FA;
+            
+            /* Neutral Colors */
+            --bg-dark: #0A0A0A;
+            --bg-light: #FFFFFF;
+            --text-dark: #1A1A1A;
+            --text-light: #FFFFFF;
+            --text-gray: #6B7280;
+        }
+        
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #0A0A0A 0%, #1A0A2E 50%, #0A0A0A 100%);
+            color: var(--text-light);
+            line-height: 1.6;
+            overflow-x: hidden;
+            position: relative;
+        }
+        
+        /* Snowflake Animation */
+        .snowflake {
+            position: fixed;
+            top: -10px;
+            color: white;
+            font-size: 1em;
+            font-family: Arial;
+            text-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
+            animation: fall linear infinite;
+            pointer-events: none;
+            z-index: 1000;
+        }
+        
+        @keyframes fall {
+            to {
+                transform: translateY(100vh) rotate(360deg);
+                opacity: 0;
+            }
+        }
+        
+        /* Header */
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            background: rgba(10, 10, 10, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 1.5rem 2rem;
+            border-bottom: 2px solid rgba(196, 30, 58, 0.3);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+        }
+        
+        .header-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            text-decoration: none;
+            transition: transform 0.3s ease;
+        }
+        
+        .logo-container:hover {
+            transform: scale(1.05);
+        }
+        
+        .logo-icon {
+            width: 50px;
+            height: 50px;
+            flex-shrink: 0;
+        }
+        
+        .logo-wordmark {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--text-light);
+            letter-spacing: -0.5px;
+        }
+        
+        .music-toggle {
+            background: rgba(196, 30, 58, 0.2);
+            border: 2px solid var(--christmas-red);
+            color: var(--text-light);
+            padding: 0.75rem 1.5rem;
+            border-radius: 50px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: all 0.3s ease;
+            animation: attentionGrab 2s ease-in-out infinite;
+        }
+        
+        @keyframes attentionGrab {
+            0%, 100% {
+                transform: scale(1);
+            }
+            25% {
+                transform: scale(1.1) rotate(-2deg);
+            }
+            50% {
+                transform: scale(1.15) rotate(2deg);
+            }
+            75% {
+                transform: scale(1.1) rotate(-1deg);
+            }
+        }
+        
+        .music-toggle:hover {
+            background: rgba(196, 30, 58, 0.4);
+            transform: scale(1.2);
+            animation: none;
+        }
+        
+        .music-toggle.playing {
+            background: rgba(15, 81, 50, 0.3);
+            border-color: var(--christmas-green);
+            animation: pulse 2s ease-in-out infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+                box-shadow: 0 0 0 0 rgba(15, 81, 50, 0.7);
+            }
+            50% {
+                transform: scale(1.05);
+                box-shadow: 0 0 0 8px rgba(15, 81, 50, 0);
+            }
+        }
+        
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 6rem 2rem 4rem;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(circle at 50% 50%, rgba(196, 30, 58, 0.1) 0%, transparent 70%);
+            pointer-events: none;
+        }
+        
+        .hero h1 {
+            font-size: clamp(2.5rem, 6vw, 4.5rem);
+            font-weight: 800;
+            margin-bottom: 1rem;
+            color: #FFFFFF;
+            text-shadow: 
+                0 0 30px rgba(255, 215, 0, 0.8),
+                0 0 60px rgba(255, 215, 0, 0.4),
+                0 0 90px rgba(255, 215, 0, 0.2),
+                0 2px 4px rgba(0, 0, 0, 0.3),
+                0 0 20px rgba(196, 30, 58, 0.3);
+            animation: glow 3s ease-in-out infinite alternate;
+            position: relative;
+            z-index: 1;
+        }
+        
+        @keyframes glow {
+            from {
+                filter: brightness(1);
+            }
+            to {
+                filter: brightness(1.2);
+            }
+        }
+        
+        .hero-subtitle {
+            font-size: clamp(1.1rem, 2.5vw, 1.5rem);
+            color: rgba(255, 255, 255, 0.9);
+            margin-top: 1rem;
+            position: relative;
+            z-index: 1;
+        }
+        
+        /* Twinkling Lights */
+        .twinkle {
+            position: absolute;
+            width: 4px;
+            height: 4px;
+            background: var(--christmas-gold);
+            border-radius: 50%;
+            box-shadow: 0 0 6px var(--christmas-gold);
+            animation: twinkle 2s infinite;
+        }
+        
+        @keyframes twinkle {
+            0%, 100% { opacity: 0.3; transform: scale(1); }
+            50% { opacity: 1; transform: scale(1.5); }
+        }
+        
+        /* Section Styling */
+        .section {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .section-header {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            margin-bottom: 3rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 3px solid;
+            border-image: linear-gradient(90deg, var(--christmas-red), var(--christmas-gold), var(--christmas-green)) 1;
+        }
+        
+        .section-icon {
+            width: 60px;
+            height: 60px;
+            flex-shrink: 0;
+        }
+        
+        .section-title {
+            font-size: clamp(2rem, 4vw, 2.5rem);
+            font-weight: 700;
+            background: linear-gradient(135deg, var(--christmas-red), var(--christmas-gold));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        /* Article Grid */
+        .articles-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        @media (min-width: 1200px) {
+            .articles-grid {
+                grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            }
+        }
+        
+        @media (min-width: 1600px) {
+            .articles-grid {
+                grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            }
+        }
+        
+        .article-card {
+            background: rgba(255, 255, 255, 0.05);
+            border: 2px solid rgba(196, 30, 58, 0.3);
+            border-radius: 16px;
+            overflow: hidden;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            backdrop-filter: blur(10px);
+            cursor: pointer;
+        }
+        
+        .article-card a {
+            text-decoration: none;
+            color: inherit;
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .article-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--christmas-red), var(--christmas-gold), var(--christmas-green));
+            transform: scaleX(0);
+            transition: transform 0.4s ease;
+        }
+        
+        .article-card:hover {
+            transform: translateY(-8px) scale(1.02);
+            border-color: var(--christmas-gold);
+            box-shadow: 0 20px 40px rgba(196, 30, 58, 0.3), 0 0 20px rgba(255, 215, 0, 0.2);
+        }
+        
+        .article-card:hover::before {
+            transform: scaleX(1);
+        }
+        
+        .article-image {
+            width: 100%;
+            height: 200px;
+            object-fit: contain;
+            object-position: center;
+            background: rgba(91, 33, 182, 0.1);
+            display: block;
+            padding: 0.5rem;
+        }
+        
+        .article-content {
+            padding: 1.5rem;
+        }
+        
+        .article-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: var(--text-light);
+            margin-bottom: 0.75rem;
+            line-height: 1.4;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+        
+        .article-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--christmas-gold);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+            margin-top: 1rem;
+            transition: gap 0.3s ease;
+            pointer-events: none;
+        }
+        
+        .article-card:hover .article-link {
+            gap: 0.75rem;
+            color: var(--text-light);
+        }
+        
+        /* Loading State */
+        .loading {
+            text-align: center;
+            padding: 3rem;
+            color: rgba(255, 255, 255, 0.7);
+        }
+        
+        .spinner {
+            border: 3px solid rgba(255, 255, 255, 0.1);
+            border-top: 3px solid var(--christmas-gold);
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 1rem;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        /* Footer */
+        footer {
+            background: rgba(10, 10, 10, 0.95);
+            padding: 3rem 2rem;
+            text-align: center;
+            border-top: 2px solid rgba(196, 30, 58, 0.3);
+            margin-top: 4rem;
+        }
+        
+        .footer-logo {
+            margin-bottom: 1rem;
+        }
+        
+        .footer-text {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 0.9rem;
+        }
+        
+        /* Christmas Decorative Icons */
+        .christmas-icon {
+            width: 100%;
+            height: 100%;
+        }
+        
+        .section-divider {
+            position: relative;
+            margin: 3rem 0;
+            text-align: center;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .section-divider::before,
+        .section-divider::after {
+            content: '';
+            flex: 1;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, var(--christmas-gold), transparent);
+        }
+        
+        .divider-icon {
+            margin: 0 1.5rem;
+            font-size: 2rem;
+            animation: float 3s ease-in-out infinite;
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header {
+                padding: 1rem;
+            }
+            
+            .logo-wordmark {
+                font-size: 1.25rem;
+            }
+            
+            .hero {
+                padding: 4rem 1.5rem 3rem;
+            }
+            
+            .section {
+                padding: 3rem 1.5rem;
+            }
+            
+            .articles-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+            
+            .section-header {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+        
+        /* Decorative Christmas Elements */
+        .ornament {
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            pointer-events: none;
+            opacity: 0.6;
+            animation: float 4s ease-in-out infinite;
+        }
+        
+        .reindeer {
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            pointer-events: none;
+            opacity: 0.4;
+            animation: float 5s ease-in-out infinite;
+        }
+        
+        .elf {
+            position: absolute;
+            width: 35px;
+            height: 35px;
+            pointer-events: none;
+            opacity: 0.5;
+            animation: float 3.5s ease-in-out infinite;
+        }
+        
+        .candy-cane {
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            pointer-events: none;
+            opacity: 0.5;
+            animation: float 4.5s ease-in-out infinite;
+        }
+        
+        .gift-box {
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            pointer-events: none;
+            opacity: 0.5;
+            animation: float 3s ease-in-out infinite;
+        }
+        
+        /* Section decorative elements */
+        .section-decoration {
+            position: absolute;
+            pointer-events: none;
+            z-index: 0;
+        }
+        
+        /* Social Share Buttons */
+        .social-share {
+            position: fixed;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 50;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        
+        .social-btn {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            color: white;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+        
+        .social-btn:hover {
+            transform: scale(1.1) translateX(-5px);
+            background: rgba(255, 255, 255, 0.2);
+            border-color: var(--christmas-gold);
+            box-shadow: 0 0 20px rgba(255, 215, 0, 0.5), 0 0 40px rgba(255, 165, 0, 0.3);
+        }
+        
+        .social-btn svg {
+            width: 24px;
+            height: 24px;
+        }
+        
+        @media (max-width: 768px) {
+            .social-share {
+                right: 10px;
+            }
+            
+            .social-btn {
+                width: 45px;
+                height: 45px;
+            }
+            
+            .social-btn svg {
+                width: 20px;
+                height: 20px;
+            }
+        }
+        
+        /* Ensure articles are visible */
+        .articles-grid {
+            position: relative;
+            z-index: 2;
+        }
+        
+        .article-card {
+            position: relative;
+            z-index: 2;
+        }
+    </style>
+</head>
+<body>
+    <!-- Snowflakes -->
+    <div id="snowflakes"></div>
+    
+    <!-- Header -->
+    <header>
+        <div class="header-content">
+            <a href="https://www.lleverage.ai" class="logo-container" target="_blank" rel="noopener">
+                <!-- Icon with purple gradient -->
+                <svg class="logo-icon" viewBox="0 0 12095 12095" fill="none" xmlns="http://www.w3.org/2000/svg" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+                    <defs>
+                        <linearGradient id="headerIconGradient" x1="0" y1="0" x2="1" y2="0" gradientUnits="userSpaceOnUse" gradientTransform="matrix(12094.5,12094.5,-12094.5,12094.5,0,0)">
+                            <stop offset="0" style="stop-color:#3a0067;stop-opacity:1"/>
+                            <stop offset="1" style="stop-color:#a855f7;stop-opacity:1"/>
+                        </linearGradient>
+                    </defs>
+                    <rect x="0" y="0" width="12095" height="12095" style="fill:url(#headerIconGradient);fill-rule:nonzero;"/>
+                    <g>
+                        <path d="M5959.55,1985.05l3708.67,6423.6c325.935,564.534 132.221,1287.48 -432.313,1613.42l-900.121,519.685c-564.534,325.934 -1287.48,132.221 -1613.42,-432.314l-3708.67,-6423.6c-325.934,-564.534 -132.22,-1287.48 432.314,-1613.41l900.121,-519.685c564.534,-325.935 1287.48,-132.221 1613.42,432.313l-0.001,-0.009Z" style="fill:#3a0067;"/>
+                        <path d="M5632.23,2174.03l3685.04,6382.68c234.673,406.465 95.199,926.987 -311.265,1161.66l-29.371,16.957c-406.465,234.673 -926.987,95.2 -1161.66,-311.265l-3685.04,-6382.68c-234.673,-406.464 -95.199,-926.987 311.266,-1161.66l29.371,-16.957c406.464,-234.673 926.986,-95.199 1161.66,311.265l-0.001,-0Z" style="fill:#fff;"/>
+                    </g>
+                    <g>
+                        <path d="M5372.12,6240.18l1251.97,2168.47c325.934,564.534 132.221,1287.48 -432.313,1613.42l-900.121,519.685c-564.534,325.934 -1287.48,132.221 -1613.42,-432.314l-1251.97,-2168.47c-325.934,-564.534 -132.221,-1287.48 432.313,-1613.42l900.121,-519.685c564.534,-325.934 1287.48,-132.221 1613.42,432.314Z" style="fill:#3a0067;"/>
+                        <path d="M5032.99,6408.69l1240.15,2148.01c234.673,406.465 95.199,926.987 -311.265,1161.66l-29.371,16.957c-406.465,234.673 -926.987,95.2 -1161.66,-311.265l-1240.15,-2148.01c-234.672,-406.464 -95.199,-926.986 311.266,-1161.66l29.371,-16.957c406.465,-234.673 926.987,-95.199 1161.66,311.265l-0.001,-0Z" style="fill:#fff;"/>
+                    </g>
+                </svg>
+                <!-- White wordmark -->
+                <span class="logo-wordmark">Lleverage</span>
+            </a>
+            <button class="music-toggle" id="musicToggle" aria-label="Toggle Christmas music">
+                <span>🎵</span>
+                <span id="musicToggleText">Play Music</span>
+            </button>
+        </div>
+    </header>
+    
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Our Most Read Articles of 2025</h1>
+        <p class="hero-subtitle">Discover the insights that shaped businesses this year</p>
+        <div id="twinkles"></div>
+    </section>
+    
+    <!-- Social Share Buttons -->
+    <div class="social-share">
+        <a href="#" class="social-btn linkedin" onclick="shareOnLinkedIn(event)" aria-label="Share on LinkedIn" title="Share on LinkedIn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="#0077B5">
+                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+            </svg>
+        </a>
+        <a href="#" class="social-btn email" onclick="shareViaEmail(event)" aria-label="Share via Email" title="Share via Email">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C41E3A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                <polyline points="22,6 12,13 2,6"/>
+            </svg>
+        </a>
+        <a href="#" class="social-btn teams" onclick="shareOnTeams(event)" aria-label="Share on Microsoft Teams" title="Share on Microsoft Teams">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                <rect x="2" y="2" width="10" height="10" fill="#F25022"/>
+                <rect x="14" y="2" width="10" height="10" fill="#7FBA00"/>
+                <rect x="2" y="14" width="10" height="10" fill="#00A4EF"/>
+                <rect x="14" y="14" width="10" height="10" fill="#FFB900"/>
+            </svg>
+        </a>
+    </div>
+    
+    <!-- Articles Sections -->
+    <main id="articlesContainer">
+        <div class="loading">
+            <div class="spinner"></div>
+            <p>Loading articles...</p>
+        </div>
+    </main>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="footer-logo">
+            <svg width="40" height="40" viewBox="0 0 12095 12095" fill="none" xmlns="http://www.w3.org/2000/svg" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+                <defs>
+                    <linearGradient id="footerIconGradient" x1="0" y1="0" x2="1" y2="0" gradientUnits="userSpaceOnUse" gradientTransform="matrix(12094.5,12094.5,-12094.5,12094.5,0,0)">
+                        <stop offset="0" style="stop-color:#3a0067;stop-opacity:1"/>
+                        <stop offset="1" style="stop-color:#a855f7;stop-opacity:1"/>
+                    </linearGradient>
+                </defs>
+                <rect x="0" y="0" width="12095" height="12095" style="fill:url(#footerIconGradient);fill-rule:nonzero;"/>
+                <g>
+                    <path d="M5959.55,1985.05l3708.67,6423.6c325.935,564.534 132.221,1287.48 -432.313,1613.42l-900.121,519.685c-564.534,325.934 -1287.48,132.221 -1613.42,-432.314l-3708.67,-6423.6c-325.934,-564.534 -132.22,-1287.48 432.314,-1613.41l900.121,-519.685c564.534,-325.935 1287.48,-132.221 1613.42,432.313l-0.001,-0.009Z" style="fill:#3a0067;"/>
+                    <path d="M5632.23,2174.03l3685.04,6382.68c234.673,406.465 95.199,926.987 -311.265,1161.66l-29.371,16.957c-406.465,234.673 -926.987,95.2 -1161.66,-311.265l-3685.04,-6382.68c-234.673,-406.464 -95.199,-926.987 311.266,-1161.66l29.371,-16.957c406.464,-234.673 926.986,-95.199 1161.66,311.265l-0.001,-0Z" style="fill:#fff;"/>
+                </g>
+                <g>
+                    <path d="M5372.12,6240.18l1251.97,2168.47c325.934,564.534 132.221,1287.48 -432.313,1613.42l-900.121,519.685c-564.534,325.934 -1287.48,132.221 -1613.42,-432.314l-1251.97,-2168.47c-325.934,-564.534 -132.221,-1287.48 432.313,-1613.42l900.121,-519.685c564.534,-325.934 1287.48,-132.221 1613.42,432.314Z" style="fill:#3a0067;"/>
+                    <path d="M5032.99,6408.69l1240.15,2148.01c234.673,406.465 95.199,926.987 -311.265,1161.66l-29.371,16.957c-406.465,234.673 -926.987,95.2 -1161.66,-311.265l-1240.15,-2148.01c-234.672,-406.464 -95.199,-926.986 311.266,-1161.66l29.371,-16.957c406.465,-234.673 926.987,-95.199 1161.66,311.265l-0.001,-0Z" style="fill:#fff;"/>
+                </g>
+            </svg>
+        </div>
+        <p class="footer-text">© 2025 Lleverage. All rights reserved.</p>
+    </footer>
+    
+    <!-- Audio Element -->
+    <audio id="christmasMusic" loop preload="auto" playsinline autoplay>
+        <source src="christmas-music.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    
+    <script>
+        // Article data structure
+        const articleSections = [
+            {
+                title: "AI Automation for Countries",
+                icon: "🌍",
+                articles: [
+                    "https://www.lleverage.ai/blog/ai-automation-in-the-netherlands-how-dutch-businesses-are-leading-europes-automation-revolution-in-2025",
+                    "https://www.lleverage.ai/blog/ai-automation-in-france-how-french-businesses-are-leading-europes-technology-renaissance-in-2025",
+                    "https://www.lleverage.ai/blog/ai-automation-in-the-uk-how-british-businesses-are-transforming-operations-in-2025"
+                ]
+            },
+            {
+                title: "Use Cases",
+                icon: "🎁",
+                articles: [
+                    "https://www.lleverage.ai/blog/how-a-140-year-old-wood-company-eliminated-manual-order-processing-with-ai-automation",
+                    "https://www.lleverage.ai/blog/how-a-130-year-old-family-business-transformed-customer-support-with-ai-automation"
+                ]
+            },
+            {
+                title: "ERP General Knowledge",
+                icon: "🎄",
+                articles: [
+                    "https://www.lleverage.ai/blog/how-ai-automation-solves-your-erp-tms-problems-from-manual-work-to-intelligent-operations",
+                    "https://www.lleverage.ai/blog/erp-implementation-failure-why-75-fail-at-189-over-budget-and-how-ai-automation-fills-the-gaps",
+                    "https://www.lleverage.ai/blog/erp-ai-integration-guide-lleverage-business-central-sap-infor-dynamics-365-f-o-afas-navision",
+                    "https://www.lleverage.ai/blog/the-eu500k-question-what-your-erp-system-isnt-telling-you-about-its-hidden-costs-in-2025"
+                ]
+            },
+            {
+                title: "From Manual to Automated",
+                icon: "✨",
+                articles: [
+                    "https://www.lleverage.ai/blog/the-death-of-data-entry-why-manual-work-is-becoming-extinct-in-2025",
+                    "https://www.lleverage.ai/blog/ai-document-processing-how-ai-is-making-manual-data-entry-obsolete",
+                    "https://www.lleverage.ai/blog/the-roi-of-ai-automation-how-to-measure-success-in-your-business-2025-guide",
+                    "https://www.lleverage.ai/blog/how-to-transition-from-manual-workflows-to-ai-powered-automation-a-step-by-step-guide-for-2025",
+                    "https://www.lleverage.ai/blog/the-6-back-office-automations-that-wholesale-manufacturing-and-logistics-companies-cant-afford-to-ignore",
+                    "https://www.lleverage.ai/blog/the-state-of-ai-manufacturing-in-europe-8-game-changing-automations-transforming-the-industry"
+                ]
+            },
+            {
+                title: "AI Security & Compliance",
+                icon: "🔒",
+                articles: [
+                    "https://www.lleverage.ai/blog/ai-security-and-compliance-what-european-businesses-need-to-consider-in-2025"
+                ]
+            }
+        ];
+        
+        // Fetch article data with timeout
+        async function fetchArticleData(url, timeout = 5000) {
+            const cacheKey = `article_${url}`;
+            // Check cache first
+            const cached = localStorage.getItem(cacheKey);
+            if (cached) {
+                try {
+                    const parsed = JSON.parse(cached);
+                    if (parsed.title && !parsed.title.toLowerCase().includes('article title') && parsed.title !== 'Article Title') {
+                        return parsed;
+                    }
+                } catch (e) {
+                    localStorage.removeItem(cacheKey);
+                }
+            }
+            
+            // Create a timeout promise
+            const timeoutPromise = new Promise((_, reject) => 
+                setTimeout(() => reject(new Error('Timeout')), timeout)
+            );
+            
+            // Fetch with timeout
+            const fetchPromise = async () => {
+                try {
+                    // Try direct fetch first
+                    const controller = new AbortController();
+                    const timeoutId = setTimeout(() => controller.abort(), timeout);
+                    
+                    let response = await fetch(url, { signal: controller.signal });
+                    clearTimeout(timeoutId);
+                    if (!response.ok) throw new Error('Direct fetch failed');
+                    
+                    const html = await response.text();
+                    const parser = new DOMParser();
+                    const doc = parser.parseFromString(html, 'text/html');
+                    
+                    const ogTitle = doc.querySelector('meta[property="og:title"]')?.content;
+                    const titleTag = doc.querySelector('title')?.textContent || '';
+                    let title = ogTitle || titleTag || 'Article Title';
+                    title = title.replace(/\s*\|\s*Lleverage\s*$/i, '').trim();
+                    title = title.replace(/&amp;/g, '&').replace(/&lt;/g, '<').replace(/&gt;/g, '>');
+                    
+                    const ogImage = doc.querySelector('meta[property="og:image"]')?.content || 
+                                   doc.querySelector('meta[name="twitter:image"]')?.content || '';
+                    
+                    const data = { title: title, image: ogImage };
+                    localStorage.setItem(cacheKey, JSON.stringify(data));
+                    return data;
+                } catch (error) {
+                    // Quick fallback - use URL slug
+                    const slug = url.split('/').pop() || '';
+                    const fallbackTitle = slug
+                        .replace(/-/g, ' ')
+                        .split(' ')
+                        .map(word => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
+                        .join(' ');
+                    return { title: fallbackTitle, image: '' };
+                }
+            };
+            
+            return Promise.race([fetchPromise(), timeoutPromise]).catch(() => {
+                // On timeout or error, return fallback
+                const slug = url.split('/').pop() || '';
+                const fallbackTitle = slug
+                    .replace(/-/g, ' ')
+                    .split(' ')
+                    .map(word => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
+                    .join(' ');
+                return { title: fallbackTitle, image: '' };
+            });
+        }
+        
+        // Render articles with progressive loading
+        async function renderArticles() {
+            const container = document.getElementById('articlesContainer');
+            container.innerHTML = '';
+            
+            // Render all sections immediately with placeholders
+            const sectionElements = [];
+            articleSections.forEach((section, index) => {
+                // Add section divider before (except first section)
+                if (index > 0) {
+                    const divider = document.createElement('div');
+                    divider.className = 'section-divider';
+                    const dividerIcons = ['🎄', '⭐', '🎁', '🍬', '🎅', '❄️'];
+                    const iconIndex = (index - 1) % dividerIcons.length;
+                    divider.innerHTML = `<div class="divider-icon">${dividerIcons[iconIndex]}</div>`;
+                    container.appendChild(divider);
+                }
+                
+                const sectionEl = document.createElement('div');
+                sectionEl.className = 'section';
+                
+                const headerEl = document.createElement('div');
+                headerEl.className = 'section-header';
+                headerEl.innerHTML = `
+                    <span style="font-size: 2.5rem; animation: float 3s ease-in-out infinite;">${section.icon}</span>
+                    <h2 class="section-title">${section.title}</h2>
+                `;
+                
+                const gridEl = document.createElement('div');
+                gridEl.className = 'articles-grid';
+                gridEl.id = `section-${index}`;
+                
+                // Show placeholder articles immediately
+                section.articles.forEach((url, articleIndex) => {
+                    const articleCard = document.createElement('article');
+                    articleCard.className = 'article-card';
+                    const articleLink = document.createElement('a');
+                    articleLink.href = url;
+                    articleLink.target = '_blank';
+                    articleLink.rel = 'noopener';
+                    articleLink.style.textDecoration = 'none';
+                    articleLink.style.color = 'inherit';
+                    articleLink.style.display = 'block';
+                    articleLink.style.width = '100%';
+                    articleLink.style.height = '100%';
+                    articleLink.innerHTML = `
+                        <div class="article-image" style="background: linear-gradient(135deg, #5B21B6, #7C3AED); display: flex; align-items: center; justify-content: center; color: white; font-size: 3rem;">🎄</div>
+                        <div class="article-content">
+                            <h3 class="article-title">Loading...</h3>
+                            <div class="article-link">
+                                Read Article <span>→</span>
+                            </div>
+                        </div>
+                    `;
+                    articleCard.appendChild(articleLink);
+                    articleCard.dataset.url = url;
+                    articleCard.dataset.index = articleIndex;
+                    gridEl.appendChild(articleCard);
+                });
+                
+                sectionEl.appendChild(headerEl);
+                sectionEl.appendChild(gridEl);
+                container.appendChild(sectionEl);
+                sectionElements.push({ gridEl, articles: section.articles });
+            });
+            
+            // Fetch all articles in parallel with batching
+            const allArticles = articleSections.flatMap((section, sectionIndex) => 
+                section.articles.map((url, articleIndex) => ({ url, sectionIndex, articleIndex }))
+            );
+            
+            // Function to update article card
+            const updateArticleCard = (article) => {
+                const gridEl = sectionElements[article.sectionIndex].gridEl;
+                const articleCard = gridEl.querySelector(`[data-url="${article.url}"]`);
+                if (articleCard && article.title) {
+                    const articleLink = articleCard.querySelector('a');
+                    if (articleLink) {
+                        // Update image if available
+                        const currentImage = articleLink.querySelector('.article-image');
+                        if (article.image && currentImage && !currentImage.querySelector('img')) {
+                            const img = document.createElement('img');
+                            img.src = article.image;
+                            img.alt = article.title;
+                            img.className = 'article-image';
+                            img.loading = 'lazy';
+                            img.onerror = function() { 
+                                this.style.display = 'none';
+                                if (currentImage.parentNode) {
+                                    currentImage.innerHTML = '<div style="background: linear-gradient(135deg, #5B21B6, #7C3AED); display: flex; align-items: center; justify-content: center; color: white; font-size: 3rem; width: 100%; height: 200px;">🎄</div>';
+                                }
+                            };
+                            currentImage.innerHTML = '';
+                            currentImage.appendChild(img);
+                        }
+                        // Update title
+                        const titleEl = articleLink.querySelector('.article-title');
+                        if (titleEl && article.title !== 'Loading...' && article.title !== 'Article Title') {
+                            titleEl.textContent = article.title;
+                        }
+                    }
+                }
+            };
+            
+            // Process in batches of 6 for faster loading
+            const batchSize = 6;
+            for (let i = 0; i < allArticles.length; i += batchSize) {
+                const batch = allArticles.slice(i, i + batchSize);
+                const batchPromises = batch.map(async ({ url, sectionIndex, articleIndex }) => {
+                    try {
+                        const data = await fetchArticleData(url, 4000); // 4 second timeout
+                        return { url, ...data, sectionIndex, articleIndex };
+                    } catch (error) {
+                        // Fallback title from URL
+                        const slug = url.split('/').pop() || '';
+                        const fallbackTitle = slug.replace(/-/g, ' ').split(' ').map(word => 
+                            word.charAt(0).toUpperCase() + word.slice(1).toLowerCase()
+                        ).join(' ');
+                        return { url, title: fallbackTitle, image: '', sectionIndex, articleIndex };
+                    }
+                });
+                
+                // Wait for batch and update immediately
+                const batchResults = await Promise.allSettled(batchPromises);
+                batchResults.forEach((result) => {
+                    if (result.status === 'fulfilled') {
+                        const article = result.value;
+                        updateArticleCard(article);
+                    }
+                });
+            }
+            
+            // Final pass: retry any that failed or still show "Loading..."
+            setTimeout(() => {
+                allArticles.forEach(async ({ url, sectionIndex, articleIndex }) => {
+                    const gridEl = sectionElements[sectionIndex].gridEl;
+                    const articleCard = gridEl.querySelector(`[data-url="${url}"]`);
+                    if (articleCard) {
+                        const titleEl = articleCard.querySelector('.article-title');
+                        if (titleEl && (titleEl.textContent === 'Loading...' || titleEl.textContent === 'Article Title')) {
+                            try {
+                                const data = await fetchArticleData(url, 5000);
+                                if (data.title && data.title !== 'Article Title') {
+                                    updateArticleCard({ url, ...data, sectionIndex, articleIndex });
+                                }
+                            } catch (e) {
+                                // Keep fallback
+                            }
+                        }
+                    }
+                });
+            }, 2000);
+        }
+        
+        // Snowflake animation
+        function createSnowflakes() {
+            const snowflakesContainer = document.getElementById('snowflakes');
+            const snowflakeSymbols = ['❄', '❅', '❆'];
+            const numSnowflakes = 50;
+            
+            for (let i = 0; i < numSnowflakes; i++) {
+                const snowflake = document.createElement('div');
+                snowflake.className = 'snowflake';
+                snowflake.textContent = snowflakeSymbols[Math.floor(Math.random() * snowflakeSymbols.length)];
+                snowflake.style.left = Math.random() * 100 + '%';
+                snowflake.style.animationDuration = (Math.random() * 3 + 2) + 's';
+                snowflake.style.animationDelay = Math.random() * 2 + 's';
+                snowflake.style.opacity = Math.random() * 0.5 + 0.5;
+                snowflakesContainer.appendChild(snowflake);
+            }
+        }
+        
+        // Twinkling lights
+        function createTwinkles() {
+            const twinklesContainer = document.getElementById('twinkles');
+            const numTwinkles = 20;
+            
+            for (let i = 0; i < numTwinkles; i++) {
+                const twinkle = document.createElement('div');
+                twinkle.className = 'twinkle';
+                twinkle.style.left = Math.random() * 100 + '%';
+                twinkle.style.top = Math.random() * 100 + '%';
+                twinkle.style.animationDelay = Math.random() * 2 + 's';
+                twinkle.style.animationDuration = (Math.random() * 1 + 1.5) + 's';
+                twinklesContainer.appendChild(twinkle);
+            }
+        }
+        
+        // Social Share Functions
+        function shareOnLinkedIn(e) {
+            e.preventDefault();
+            const url = encodeURIComponent(window.location.href);
+            window.open(`https://www.linkedin.com/sharing/share-offsite/?url=${url}`, 'linkedin-share-dialog', 'width=626,height=436');
+        }
+        
+        function shareViaEmail(e) {
+            e.preventDefault();
+            const url = window.location.href;
+            const subject = encodeURIComponent('Our Most Read Articles of 2025 | Lleverage');
+            const body = encodeURIComponent(`Check out Lleverage's most read articles of 2025: ${url}`);
+            window.location.href = `mailto:?subject=${subject}&body=${body}`;
+        }
+        
+        function shareOnTeams(e) {
+            e.preventDefault();
+            const url = encodeURIComponent(window.location.href);
+            const title = encodeURIComponent('Our Most Read Articles of 2025 | Lleverage');
+            // Microsoft Teams sharing URL
+            window.open(`https://teams.microsoft.com/share?href=${url}&text=${title}`, 'teams-share-dialog', 'width=626,height=436');
+        }
+        
+        // Music toggle
+        const musicToggle = document.getElementById('musicToggle');
+        const musicToggleText = document.getElementById('musicToggleText');
+        const christmasMusic = document.getElementById('christmasMusic');
+        let isPlaying = false;
+        
+        // Preload audio immediately on page load
+        christmasMusic.load();
+        christmasMusic.volume = 0.5;
+        
+        // Ensure the music loops continuously
+        christmasMusic.loop = true;
+        
+        // Backup loop handler in case the loop attribute doesn't work
+        christmasMusic.addEventListener('ended', () => {
+            if (isPlaying) {
+                christmasMusic.currentTime = 5; // Restart at 5 seconds
+                christmasMusic.play();
+            }
+        });
+        
+        musicToggle.addEventListener('click', () => {
+            if (isPlaying) {
+                christmasMusic.pause();
+                musicToggleText.textContent = 'Play Music';
+                musicToggle.classList.remove('playing');
+                isPlaying = false;
+            } else {
+                // Ensure audio is ready and start at 5 seconds
+                if (christmasMusic.readyState >= 2) {
+                    christmasMusic.currentTime = 5;
+                    christmasMusic.play();
+                    musicToggleText.textContent = 'Pause Music';
+                    musicToggle.classList.add('playing');
+                    isPlaying = true;
+                } else {
+                    // If not ready, load and play from 5 seconds
+                    christmasMusic.load();
+                    christmasMusic.play().then(() => {
+                        christmasMusic.currentTime = 5;
+                        musicToggleText.textContent = 'Pause Music';
+                        musicToggle.classList.add('playing');
+                        isPlaying = true;
+                    }).catch(() => {
+                        alert('Music file not found. Please add a music file to enable this feature.');
+                    });
+                }
+            }
+        });
+        
+        // Clear cache for specific problematic articles
+        function clearArticleCache(url) {
+            const cacheKey = `article_${url}`;
+            localStorage.removeItem(cacheKey);
+        }
+        
+        // Initialize
+        document.addEventListener('DOMContentLoaded', () => {
+            // Clear cache for the last article to force refetch
+            clearArticleCache('https://www.lleverage.ai/blog/the-state-of-ai-manufacturing-in-europe-8-game-changing-automations-transforming-the-industry');
+            createSnowflakes();
+            createTwinkles();
+            renderArticles();
+            
+            // Autoplay music function
+            const tryAutoplay = async () => {
+                try {
+                    christmasMusic.volume = 0.5;
+                    // Wait for audio to be ready
+                    if (christmasMusic.readyState >= 2) {
+                        christmasMusic.currentTime = 5;
+                        await christmasMusic.play();
+                    } else {
+                        christmasMusic.addEventListener('canplay', () => {
+                            christmasMusic.currentTime = 5;
+                            christmasMusic.play();
+                        }, { once: true });
+                        await christmasMusic.play();
+                    }
+                    musicToggleText.textContent = 'Pause Music';
+                    musicToggle.classList.add('playing');
+                    isPlaying = true;
+                } catch (error) {
+                    // Autoplay blocked - will try on user interaction
+                }
+            };
+            
+            // Try autoplay on multiple events for better browser compatibility
+            const startMusic = () => {
+                if (!isPlaying) {
+                    tryAutoplay();
+                }
+            };
+            
+            // Try immediately
+            startMusic();
+            
+            // Try on window load
+            window.addEventListener('load', startMusic);
+            
+            // Try on any user interaction (click, touch, scroll, keypress)
+            const interactionEvents = ['click', 'touchstart', 'scroll', 'keydown', 'mousemove'];
+            let interactionAttempted = false;
+            interactionEvents.forEach(eventType => {
+                document.addEventListener(eventType, () => {
+                    if (!interactionAttempted && !isPlaying) {
+                        interactionAttempted = true;
+                        startMusic();
+                    }
+                }, { once: true });
+            });
+        });
+    </script>
+</body>
+</html>
